@@ -6,11 +6,7 @@ import java.util.Random;
  *
  */
 public class RandomName {
-
-    /**
-     *
-     */
-    int max_name_length;
+    private int max_name_length;
 
     /**
      * Конструктор генератора случайных "слов" - в нашем случае имен
@@ -53,10 +49,16 @@ public class RandomName {
         return sb.toString();
     }
 
+    /**
+     * Метод генерирующий слово в кирилице из случайных букв
+     * нечетные буквы согласные, четные гласные
+     * количество букв в слове случайное от 4-х до указанного
+     * @return
+     */
     public String getNameRusByString(){
         Random random = new Random();
         StringBuilder sb = new StringBuilder();
-        int name_length = random.nextInt(max_name_length - 2)+3;
+        int name_length = random.nextInt(max_name_length - 3)+4;
         String letter;
         String[] vowels = new String[]{"а", "е", "и", "о", "у", "э", "ю", "я"};
         String[] consonant = new String[]{"б", "в", "г", "д", "ж", "з", "к", "л", "м", "н", "п", "р", "с", "т", "ф", "х", "ц", "ч", "ш", "щ"};
@@ -73,10 +75,16 @@ public class RandomName {
         return sb.toString();
     }
 
+    /**
+     * Метод генерирующий слово в кирилице из случайных букв
+     * нечетные буквы согласные, четные гласные
+     * количество букв в слове случайное от 4-х до указанного
+     * @return
+     */
     public String getNameRusByStringShort(){
         Random random = new Random();
         StringBuilder sb = new StringBuilder();
-        int name_length = random.nextInt(max_name_length - 2)+3;
+        int name_length = random.nextInt(max_name_length - 3)+4;
         String letter;
         String[] vowels = new String[]{"а", "е", "и", "о", "у", "ю", "я"};
         String[] consonant = new String[]{"б", "в", "ж", "з", "к", "л", "м", "н", "п", "с", "ф", "х", "ц", "ч", "ш", "щ"};

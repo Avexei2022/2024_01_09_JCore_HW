@@ -16,7 +16,7 @@ public class StudentsListGenerator {
      * @param numberOfStudents - общее количество студентов
      * @param numberOfRatings - количество оценок у каждого студента
      * @param specialities - специальность
-     * @return
+     * @return - список студентов
      */
     public ArrayList<Student> getStudentsList(int numberOfStudents, int numberOfRatings, String [] specialities){
         ArrayList<Student> studentsList = new ArrayList<>();
