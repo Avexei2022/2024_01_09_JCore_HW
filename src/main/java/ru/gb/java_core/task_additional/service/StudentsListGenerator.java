@@ -11,6 +11,13 @@ public class StudentsListGenerator {
     public StudentsListGenerator() {
     }
 
+    /**
+     * Генератор списка студентов
+     * @param numberOfStudents - общее количество студентов
+     * @param numberOfRatings - количество оценок у каждого студента
+     * @param specialities - специальность
+     * @return
+     */
     public ArrayList<Student> getStudentsList(int numberOfStudents, int numberOfRatings, String [] specialities){
         ArrayList<Student> studentsList = new ArrayList<>();
         RandomName randomName = new RandomName(7);

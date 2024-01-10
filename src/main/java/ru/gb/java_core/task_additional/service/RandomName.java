@@ -12,6 +12,10 @@ public class RandomName {
      */
     int max_name_length;
 
+    /**
+     * Конструктор генератора случайных "слов" - в нашем случае имен
+     * @param max_name_length - максимальное количество букв в слове
+     */
     public RandomName(int max_name_length){
         this.max_name_length = max_name_length;
         if (max_name_length < 4) this.max_name_length = 4;

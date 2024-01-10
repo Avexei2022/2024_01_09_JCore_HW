@@ -7,6 +7,11 @@ import java.util.ArrayList;
 
 public class MainAdditional {
 
+    /**
+     * Основной метод дополнительного задания
+     * @param args
+     *
+     */
     public static void main(String[] args) {
         String[] specialities = new String[]{"Информатика", "Математика", "Физика", "Химия"};
         StudentsListGenerator studentsListGenerator = new StudentsListGenerator();
@@ -15,7 +20,7 @@ public class MainAdditional {
         System.out.println("Полный список студентов:\n");
         studentArrayList.forEach(System.out::println);
 
-        System.out.println("Список первых 5-ти студентов специальности Информатика со средним быллом выше 4,5:\n");
+        System.out.println("Список первых 5-ти студентов специальности Информатика со средним баллом выше 4,5:\n");
         studentArrayList.stream()
                 .filter(student -> student.getSpeciality().equals("Информатика")
                         && student.getAverageGrade() > 4.5)
